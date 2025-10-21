@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from 'astro:assets';
+import localLogoImage from '../content/blog/2025-10-21_15-46-43.png';
 ---
 
 <!doctype html>
@@ -18,7 +19,7 @@ import { Image } from 'astro:assets';
 				Hyper-Personalization Delivered at scale.
 			</p>
 			<p>
-				<Image src="/content/blog/2025-10-21_15-46-43.png" alt=""/>
+				<Image src={localLogoImage} alt=""/>
 			</p>
 			<p>
 				Interested in learning more, we would love to hear form you.  Drop us a note at <a href="mailto:info@hypercontent.ai">info@hypercontent.ai</a>
