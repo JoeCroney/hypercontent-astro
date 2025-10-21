@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -11,17 +12,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
 		<main>
 			<h1>HyperContent.AI</h1>
 			<p>
 				Hyper-Personalization Delivered at scale.
 			</p>
-			
+			<p>
+				<Image src="/content/blog/2025-10-21_15-46-43.png" />
+			</p>
 			<p>
 				Interested in learning more, we would love to hear form you.  Drop us a note at <a href="mailto:info@hypercontent.ai">info@hypercontent.ai</a>
 			</p>
 		</main>
-		<Footer />
 	</body>
 </html>
